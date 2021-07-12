@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #1e72bd;
+  --primary_darker-color: #155996;
+  --secondary-color: #FFBB00;
+  --light-color: #fff;
+  --dark-color: #2f4468;
+
+}
+.gnws-text-primary{
+  color: var(--primary-color);
+  &:hover{
+    background-color: #35343a;
+  }
+}
+
+.gnws-bg-primary{
+  background-color: var(--primary-color);
+}
+.gnws-bg-hover-primary{
+  &:hover{
+    background-color: var(--primary_darker-color);
+  }
+}
+.gnws-bg-primary_darker{
+  background-color: var(--primary_darker-color);
+}
+.gnws-bg-hover-secondary{
+  &:hover{
+    background-color: var(--secondary-color);
+  }
+}
