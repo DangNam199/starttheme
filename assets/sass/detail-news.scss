@@ -1,50 +1,34 @@
 .gnws-detail{
   &-description{
+    &-title{
+      font-weight: 700;
+
+      @media only screen and (max-width: 500px) {
+        font-size: 1.2rem;
+      }
+    }
    &-content{
      border: 1px dashed var(--gray-color);
      border-right: none;
      border-left: none;
-     &-intro{
-       img{
-         border-radius: 100%;
-         height: 30px;
-       }
-       a{
-         line-height: 1;
-         font-size: 13px;
 
-       }
-       span{
-         font-size: 14px;
-         color: var(--black-color);
-       }
-     }
-     &-rating{
-       span{
-         font-size: 14px;
-         color: var(--black-color);
-       }
-     }
-     &-share{
-       span{
-         font-size: 14px;
-         color: var(--black-color);
-       }
-       a{
-         width: 30px;
-         height: 30px;
-         border-radius: 50%;
-         font-size: 14px;
-         color: #fff;
-         text-align: center;
-         line-height: 25px;
-         display: inline-block;
-         margin-left: 5px;
-       }
-     }
+
    }
     &-post{
       border-top: 1px solid var(--gray-color);
+      &-content{
+        &:hover{
+          svg{
+            color: var(--primary-color);
+          }
+        }
+        a{
+          @media only screen and (max-width: 00px) {
+            top: -12px;
+            right: 3px;
+          }
+        }
+      }
     }
   }
   &-posts{
@@ -62,5 +46,11 @@
         margin-right: 3px;
       }
     }
+
+  }
+  &-bredcrumb{
+    border: 1px solid var(--gray-color);
+    border-right: none;
+    border-left: none;
   }
 }

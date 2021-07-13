@@ -3,51 +3,40 @@
 @include "header.php"
 ?>
 <div class="gnws-detail">
+    <div class="gnws-detail-bredcrumb mb-3">
+       <div class="container">
+           <div class="rank-math-breadcrumb py-2">
+               <p>
+        <span>
+            <span><a href="#" title="">Trang chủ</a>
+                » <span class="breadcrumb_last" aria-current="page">
+                    Tin tức
+                </span>
+            </span>
+        </span>
+               </p>
+           </div>
+       </div>
+    </div>
     <div class="container">
+
         <div class="row">
             <div class="col-lg-8">
-                <div class="gnws-detail-description card shadow-sm   py-4 mb-4">
+                <div class="gnws-detail-description card shadow-sm   py-2 mb-4">
+                    <h2 class="gnws-detail-description-title px-4  py-2 ">
+                        <a class="black-color gnws-hover-primary" href="#" title="">
+                            Deserunt reprehenderit veniam vero voluptas aspernatur occaecati
+                        </a>
+                    </h2>
                     <div class="gnws-detail-description-content mb-3 py-2">
-                        <div class="row align-items-center">
-                                  <div class="col-xl-5  col-12 ps-3 mb-md-0 mb-2">
-                                  <div class="gnws-detail-description-content-intro">
-                                      <img src="assets/images/1ff00a807e550de9ea0167673542030a.png" alt="">
-                                      <a class="black-color gnws-hover-primary mx-2" href="#" title="">
-                                          Thanh Nga
-                                      </a>
-                                      <span class="">09:08 AM</span>
-                                      <span>-</span>
-                                      <span>14/10/2020 </span>
-                                  </div>
-                              </div>
-                                  <div class="col-xl-4  col-6  ps-3">
-                                 <div class="gnws-detail-description-content-rating">
-                                      <span>
-                                      Đánh giá bài viết:
-                                      </span>
-                                 </div>
-                              </div>
-                                  <div class="col-xl-3 col-6 text-end pe-3">
-                                       <div class="gnws-detail-description-content-share">
-                                            <span class="d-none d-md-inline-block">
-                                            Chia sẻ:
-                                            </span>
-                                           <a class="gnws-bg-primary" href="#" title="">
-                                               <?php echo svg('facebook-f-brands','15','14') ?>
-                                           </a>
-                                           <a class="bg-secondary" href="#" title="">
-                                               <?php echo svg('twitter-brands','15','14') ?>
-                                           </a>
-                                           <a class="bg-danger" href="#" title="">
-                                               <?php echo svg('pinterest-brands','15','14') ?>
-                                           </a>
-                                       </div>
-                                  </div>
 
-                          </div>
-
+                        <div class="px-4">
+                            <?php
+                            include 'components/update-time.php';
+                            ?>
+                        </div>
                     </div>
-                    <div class="text-center p-4">
+                    <div class="text-center px-4 py-lg-4 py-2">
                         <img src="assets/images/photo-1611952327309-a739d089f5ad-1024x683.jpeg" alt="">
                     </div>
                     <div class="gnws-detail-description-post pt-3">

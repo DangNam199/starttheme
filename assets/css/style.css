@@ -164,10 +164,19 @@ img {
     position: relative; }
     @media only screen and (min-width: 1000px) {
       .menu-mobile ul .menu-item-has-children > a {
+        position: relative; } }
+    @media only screen and (min-width: 1000px) {
+      .menu-mobile ul .menu-item-has-children > a:after {
+        content: "";
+        position: absolute;
         background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='caret-down' class='svg-inline--fa fa-caret-down fa-w-10' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='%23fff' d='M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z'%3E%3C/path%3E%3C/svg%3E");
         background-size: 10px;
         background-repeat: no-repeat;
-        background-position: center right; } }
+        background-position: center;
+        top: 45%;
+        right: 3%;
+        width: 10px;
+        height: 10px; } }
 @media only screen and (max-width: 800px) {
   .menu-mobile .menu-mobile-close {
     position: absolute;
@@ -225,6 +234,27 @@ img {
   font-size: 15px;
   line-height: 1.5; }
 
+.backToTop {
+  position: fixed;
+  z-index: 2222;
+  bottom: 50px;
+  right: -120%;
+  background-color: #333;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.8s;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; }
+  .backToTop:hover {
+    background-color: var(--primary-color); }
+  .backToTop.show__backToTop {
+    right: 10px; }
+
 .gnws-main-description-title a {
   font-weight: 600;
   font-size: 29px;
@@ -245,14 +275,14 @@ img {
   line-height: 1.5;
   font-weight: 400;
   font-size: 17px; }
-  .gnws-main-description-content p a {
-    border-radius: 5px;
-    color: var(--light-color);
-    font-size: 15px; }
-    .gnws-main-description-content p a:hover {
-      border: 1px solid var(--primary-color);
-      background-color: var(--light-color);
-      color: var(--primary-color); }
+.gnws-main-description-content a {
+  border-radius: 5px;
+  color: var(--light-color);
+  font-size: 15px; }
+  .gnws-main-description-content a:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--light-color);
+    color: var(--primary-color); }
 
 :root {
   --primary-color: #1e72bd;
@@ -290,37 +320,23 @@ img {
 .gnws-bg-hover-secondary:hover {
   background-color: var(--secondary-color); }
 
+.gnws-detail-description-title {
+  font-weight: 700; }
+  @media only screen and (max-width: 500px) {
+    .gnws-detail-description-title {
+      font-size: 1.2rem; } }
 .gnws-detail-description-content {
   border: 1px dashed var(--gray-color);
   border-right: none;
   border-left: none; }
-  .gnws-detail-description-content-intro img {
-    border-radius: 100%;
-    height: 30px; }
-  .gnws-detail-description-content-intro a {
-    line-height: 1;
-    font-size: 13px; }
-  .gnws-detail-description-content-intro span {
-    font-size: 14px;
-    color: var(--black-color); }
-  .gnws-detail-description-content-rating span {
-    font-size: 14px;
-    color: var(--black-color); }
-  .gnws-detail-description-content-share span {
-    font-size: 14px;
-    color: var(--black-color); }
-  .gnws-detail-description-content-share a {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    line-height: 25px;
-    display: inline-block;
-    margin-left: 5px; }
 .gnws-detail-description-post {
   border-top: 1px solid var(--gray-color); }
+  .gnws-detail-description-post-content:hover svg {
+    color: var(--primary-color); }
+  @media only screen and (max-width: 0px) {
+    .gnws-detail-description-post-content a {
+      top: -12px;
+      right: 3px; } }
 .gnws-detail-posts-title {
   font-size: 18px;
   text-transform: uppercase;
@@ -333,5 +349,17 @@ img {
     background: var(--primary-color);
     display: inline-block;
     margin-right: 3px; }
+.gnws-detail-bredcrumb {
+  border: 1px solid var(--gray-color);
+  border-right: none;
+  border-left: none; }
+
+.rank-math-breadcrumb p {
+  color: var(--black-color);
+  margin: 0; }
+  .rank-math-breadcrumb p a {
+    color: var(--black-color); }
+    .rank-math-breadcrumb p a:hover {
+      color: red; }
 
 /*# sourceMappingURL=style.css.map */

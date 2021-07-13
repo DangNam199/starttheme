@@ -1,0 +1,14 @@
+.rank-math-breadcrumb {
+
+  p{
+    color: var(--black-color);
+    margin: 0;
+    a{
+      color: var(--black-color);
+      &:hover{
+        color: red;
+      }
+    }
+  }
+
+}
