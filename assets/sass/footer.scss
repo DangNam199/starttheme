@@ -1,17 +1,13 @@
 .gnws-footer{
   &-left{
-    color: var(--dark-color);
     font-size: 15px;
     line-height: 1.5;
   }
   &-right{
     a{
-      color: var(--dark-color);
       font-size: 15px;
       line-height: 1.5;
-        &:hover{
-          color: var(--primary-color);
-        }
+
     }
   }
 }

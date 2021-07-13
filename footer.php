@@ -1,5 +1,5 @@
 <footer>
-    <div class="gnws-footer py-5 py-lg-3">
+    <div class="gnws-footer py-5 py-lg-3 black-color">
         <div class="container">
             <div class="row align-items-center ">
                 <div class="col-lg-8  text-lg-start text-center order-lg-1 order-2">
@@ -8,11 +8,11 @@
                     </div>
                 </div>
                 <div class="col-lg-4 order-lg-2 text-lg-start text-center mb-3 order-1">
-                    <div class="gnws-footer-right">
-                        <a class=" me-3" href="#" title="">
+                    <div class="gnws-footer-right ">
+                        <a class=" me-3 gnws-hover-primary" href="#" title="">
                             Chính sách bảo mật
                         </a>
-                        <a   href="#" title="">
+                        <a class="gnws-hover-primary"   href="#" title="">
                             Điều khoản sử dụng
                         </a>
                     </div>

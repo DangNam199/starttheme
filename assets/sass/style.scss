@@ -2,8 +2,14 @@
 
 a,a:hover{
   text-decoration: none;
+  transition: all .3s linear;
+}
+img{
+  max-width: 100%;
+  height: auto;
 }
 @import "header";
 @import "footer";
 @import "home";
 @import "color";
+@import "detail-news";

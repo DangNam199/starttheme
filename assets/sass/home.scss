@@ -1,0 +1,46 @@
+.gnws-main{
+  &-description{
+    &-title{
+        a{
+          font-weight: 600;
+          font-size: 29px;
+          line-height: 1.2em;
+          @media only screen and (max-width: 500px) {
+            font-size: 25px;
+          }
+        }
+    }
+    &-time{
+      img{
+       border-radius: 100%;
+        height: 25px;
+      }
+      span{
+        font-size: 14px;
+        line-height: 1.5;
+        color: #242424;
+      }
+      &-updates{
+        border-left: 1px solid var(--gray-color);
+      }
+
+    }
+    &-content{
+      p{
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 17px;
+        a{
+          border-radius: 5px;
+          color: var(--light-color);
+          font-size: 15px;
+          &:hover{
+            border: 1px solid var(--primary-color);
+            background-color: var(--light-color);
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}

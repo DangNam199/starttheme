@@ -41,7 +41,7 @@ function svg($name, $width = false, $height = false)
 }
 ?>
 <header>
-    <div class="gnws-header gnws-bg-primary">
+    <div class="gnws-header gnws-bg-primary mb-3">
             <div class="container">
                 <div class="gnws-header-description row  align-items-center justify-content-between position-relative">
                         <div class="col-auto me-auto gnws-header-description-logo ">

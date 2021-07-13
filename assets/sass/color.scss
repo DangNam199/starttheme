@@ -4,7 +4,8 @@
   --secondary-color: #FFBB00;
   --light-color: #fff;
   --dark-color: #2f4468;
-
+  --gray-color:#e4e4e4;
+  --black-color:#242424;
 }
 .gnws-text-primary{
   color: var(--primary-color);
@@ -13,12 +14,26 @@
   }
 }
 
+.black-color{
+  color:var(--black-color) ;
+}
+.dark-color{
+  color: var(--dark-color);
+}
+.gnws-hover-primary{
+  &:hover{
+    color: var(--primary-color);
+  }
+
+}
 .gnws-bg-primary{
   background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 .gnws-bg-hover-primary{
   &:hover{
     background-color: var(--primary_darker-color);
+
   }
 }
 .gnws-bg-primary_darker{
@@ -29,3 +44,4 @@
     background-color: var(--secondary-color);
   }
 }
+
